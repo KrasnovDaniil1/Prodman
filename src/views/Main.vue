@@ -1,0 +1,11 @@
+<script>
+export default {
+    setup() {},
+};
+</script>
+
+<template>
+    <div>sdfsdf</div>
+</template>
+
+<style lang="scss" scoped></style>
