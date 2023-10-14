@@ -2,6 +2,7 @@
 import { RouterView } from "vue-router";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
+
 export default {
     components: {
         Header,
@@ -17,7 +18,9 @@ export default {
     />
     <div class="app">
         <Header />
-        <RouterView />
+        <div class="main">
+            <RouterView />
+        </div>
         <Footer />
     </div>
 </template>
@@ -29,25 +32,30 @@ export default {
     overflow: hidden;
     // font-family: "Montserrat", sans-serif !important;
 }
-html {
-    font-size: 10px;
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 :root {
-    --size-title: 24px;
-    --size-text: 20px;
-    --size-logo: 50px;
-
-    --color-primary: #000;
-    --color-secondary: #fff;
-    --color-decor: #e8ec2a;
-
-    --bg-primary: rgba(45, 87, 129, 1);
-    --bg-secondary: #fff;
-    --bg-decor: #e8ec2a;
-
-    --w-icon: 40px;
-    --px-block: 8%;
 }
+
+// :root {
+//     --size-title: 24px;
+//     --size-text: 20px;
+//     --size-logo: 50px;
+
+//     --color-primary: #000;
+//     --color-secondary: #fff;
+//     --color-decor: #e8ec2a;
+
+//     --bg-primary: rgba(45, 87, 129, 1);
+//     --bg-secondary: #fff;
+//     --bg-decor: #e8ec2a;
+
+//     --w-icon: 40px;
+//     --px-block: 8%;
+// }
 
 // @media screen and (max-width: 1368px) {
 //     html {

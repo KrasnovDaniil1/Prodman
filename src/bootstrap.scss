@@ -1,0 +1,73 @@
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+.fs-title {
+    font-size: 30px;
+}
+.fs-text {
+    font-size: 24px;
+}
+.fs-icon {
+    font-size: 40px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.br-10 {
+    border-radius: 10px;
+}
+.br-50 {
+    border-radius: 50%;
+}
+.b-1 {
+    border: 3px solid #1fb0b2;
+}
+
+.color-icon {
+    color: #bb2649;
+}
+.colot-title {
+    color: #fff;
+}
+.colot-text {
+    color: #000;
+}
+.bg-1 {
+    background: #1fb0b2;
+}
+
+.p-1 {
+    padding: 10px;
+}
+.px-1 {
+    padding: 0 10px;
+}
+
+.anim-scale {
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.line-vertical-50 {
+    width: 3px;
+    height: 50px;
+}

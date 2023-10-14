@@ -1,11 +1,15 @@
 <script>
+import About from "../components/About.vue";
 export default {
+    components: {
+        About,
+    },
     setup() {},
 };
 </script>
 
 <template>
-    <div>sdfsdf</div>
+    <section><About /></section>
 </template>
 
 <style lang="scss" scoped></style>

@@ -1,4 +1,6 @@
 import './reset.css'
+import './bootstrap.scss'
+
 
 import { createApp } from 'vue'
 import App from './App.vue'
