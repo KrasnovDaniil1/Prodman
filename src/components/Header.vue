@@ -11,7 +11,7 @@ export default {
 
 <template>
     <header>
-        <nav class="d-flex justify-content-between color-icon fs-icon">
+        <nav class="color-icon fs-icon p-1">
             <div>
                 <a href="" target="_blank"
                     ><i class="fab fa-telegram anim-scale p-1"></i
@@ -39,6 +39,11 @@ export default {
 header {
     width: 100%;
     height: 100vh;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .menu {
         position: absolute;
         top: 50%;

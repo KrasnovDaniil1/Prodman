@@ -1,30 +1,45 @@
-.d-flex {
-    display: flex;
-}
-.flex-column {
-    flex-direction: column;
-}
-.justify-content-between {
-    justify-content: space-between;
-}
-.justify-content-center {
-    justify-content: center;
-}
-.align-items-center {
-    align-items: center;
+html {
+    font-size: 10px;
 }
 
-.text-center {
-    text-align: center;
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
 }
+@media screen and (max-width: 460px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+// .d-flex {
+//     display: flex;
+// }
+// .flex-column {
+//     flex-direction: column;
+// }
+// .justify-content-between {
+//     justify-content: space-between;
+// }
+// .justify-content-center {
+//     justify-content: center;
+// }
+// .align-items-center {
+//     align-items: center;
+// }
+
+// .text-center {
+//     text-align: center;
+// }
 .fs-title {
-    font-size: 30px;
+    font-size: 3rem;
 }
 .fs-text {
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 .fs-icon {
-    font-size: 40px;
+    font-size: 4rem;
 }
 .uppercase {
     text-transform: uppercase;
@@ -36,28 +51,63 @@
 .br-50 {
     border-radius: 50%;
 }
-.b-1 {
+
+.border-first {
     border: 3px solid #1fb0b2;
 }
+.border-second {
+    border: 3px solid #d7c810;
+}
+
+// .b-1 {
+//     border: 3px solid #1fb0b2;
+// }
+// .b-2 {
+//     border: 3px solid #d7c810;
+// }
 
 .color-icon {
     color: #bb2649;
 }
-.colot-title {
+.color-title {
     color: #fff;
 }
 .colot-text {
     color: #000;
 }
-.bg-1 {
+
+.bg-first {
     background: #1fb0b2;
 }
+.bg-second {
+    background: #d7c810;
+}
+.bg-white {
+    background: white;
+}
 
+// .bg-1 {
+//     background: #1fb0b2;
+// }
+// .bg-2 {
+//     background: #d7c810;
+// }
+// .bg-white {
+//     background: white;
+// }
+
+.square {
+    min-width: 5rem;
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .p-1 {
-    padding: 10px;
+    padding: 1rem;
 }
 .px-1 {
-    padding: 0 10px;
+    padding: 0 1rem;
 }
 
 .anim-scale {
@@ -67,7 +117,23 @@
     }
 }
 
-.line-vertical-50 {
-    width: 3px;
-    height: 50px;
+// .line-vertical-50 {
+//     min-width: 3px;
+//     min-height: 5rem;
+// }
+
+// .line-horizontal-50 {
+//     min-width: 5rem;
+//     min-height: 3px;
+// }
+
+// .mb-50 {
+//     margin-bottom: 5rem;
+// }
+// .mt-50 {
+//     margin-top: 5rem;
+// }
+
+.opacity-0 {
+    opacity: 0;
 }
