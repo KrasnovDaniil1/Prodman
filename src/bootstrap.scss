@@ -13,36 +13,21 @@ html {
     }
 }
 
-// .d-flex {
-//     display: flex;
-// }
-// .flex-column {
-//     flex-direction: column;
-// }
-// .justify-content-between {
-//     justify-content: space-between;
-// }
-// .justify-content-center {
-//     justify-content: center;
-// }
-// .align-items-center {
-//     align-items: center;
-// }
-
-// .text-center {
-//     text-align: center;
-// }
 .fs-title {
     font-size: 3rem;
 }
 .fs-text {
     font-size: 2.4rem;
+    line-height: 1.1;
 }
 .fs-icon {
     font-size: 4rem;
 }
 .uppercase {
     text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
 }
 
 .br-10 {
@@ -53,56 +38,46 @@ html {
 }
 
 .border-first {
-    border: 3px solid #1fb0b2;
+    // border: 3px solid #1fb0b2;
+
+    border: 3px solid #26cb4d;
 }
 .border-second {
-    border: 3px solid #d7c810;
+    // border: 3px solid #d7c810;
+    border: 3px solid #0b64fe;
+}
+.border-third {
+    border: 3px solid #f87c4c;
 }
 
-// .b-1 {
-//     border: 3px solid #1fb0b2;
-// }
-// .b-2 {
-//     border: 3px solid #d7c810;
-// }
-
 .color-icon {
-    color: #bb2649;
+    // color: #bb2649;
+    color: #c02a1b;
 }
 .color-title {
     color: #fff;
 }
 .colot-text {
     color: #000;
+    // color: #0B64FE;
 }
 
 .bg-first {
-    background: #1fb0b2;
+    // background: #1fb0b2;
+    background: #26cb4d;
 }
 .bg-second {
-    background: #d7c810;
+    // background: #d7c810;
+    background: #0b64fe;
+}
+.bg-third {
+    background: #f87c4c;
 }
 .bg-white {
-    background: white;
+    background: #fff;
+    // background: #F2F2F2;
 }
 
-// .bg-1 {
-//     background: #1fb0b2;
-// }
-// .bg-2 {
-//     background: #d7c810;
-// }
-// .bg-white {
-//     background: white;
-// }
-
-.square {
-    min-width: 5rem;
-    min-height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .p-1 {
     padding: 1rem;
 }
@@ -110,29 +85,13 @@ html {
     padding: 0 1rem;
 }
 
+
 .anim-scale {
     transition: all 0.5s;
     &:hover {
         transform: scale(1.2);
     }
 }
-
-// .line-vertical-50 {
-//     min-width: 3px;
-//     min-height: 5rem;
-// }
-
-// .line-horizontal-50 {
-//     min-width: 5rem;
-//     min-height: 3px;
-// }
-
-// .mb-50 {
-//     margin-bottom: 5rem;
-// }
-// .mt-50 {
-//     margin-top: 5rem;
-// }
 
 .opacity-0 {
     opacity: 0;

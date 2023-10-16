@@ -19,16 +19,15 @@ export default {
             мы разбираемся с задачей, которую вам предстоит решить. Слышим вас и
             ваши потребности.
         </span>
-        <div class="line-vertical-50 bg-1"></div>
+        <div class="line-vertical bg-first"></div>
         <iframe
-            class="b-1 br-10"
+            class="border-first br-10"
             src="https://www.youtube.com/embed/OCv7KfJat40"
             title="Элдос Алмазов - Я начал расти | Stand Up"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
         ></iframe>
-        <div class="line-vertical-50 bg-1"></div>
     </main>
 </template>
 

@@ -16,12 +16,21 @@ export default {
         rel="stylesheet"
         href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+        rel="stylesheet"
+    />
     <div class="app">
         <Header />
-        <div class="main" >
+        <div class="main">
             <RouterView />
         </div>
         <Footer />
+        
     </div>
 </template>
 
@@ -30,10 +39,11 @@ export default {
     // background: var(--bg-secondary);
     max-width: 100vw;
     overflow: hidden;
-    // font-family: "Montserrat", sans-serif !important;
+    font-family: "Montserrat", sans-serif;
 }
 .main {
-    max-width: 1500px;
+    max-width: 1300px;
+    padding: 0 1rem;
     margin: 0 auto;
 }
 

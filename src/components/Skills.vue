@@ -35,31 +35,38 @@ export default {
 </script>
 
 <template>
-    <main class="d-flex flex-column align-items-center relative fs-text">
-        <div class="line-decor"></div>
-        <h1 class="uppercase fs-title bg-2 p-1 br-10 color-title">
+    <main class="fs-text">
+        <div class="line-vertical bg-second"></div>
+        <div class="line-decor bg-second"></div>
+        <h1 class="p-1 uppercase fs-title bg-second br-10 color-title">
             Этапы разработки
         </h1>
-        <div class="d-flex align-items-center" v-for="i in text" :key="i">
-            <p class="b-2 br-10 p-1" :class="{ 'opacity-0': i.num % 2 == 0 }">
+        <nav v-for="i in text" :key="i">
+            <p
+                class="border-second br-10 p-1 text-center bg-white"
+                :class="{ 'opacity-0': i.num % 2 == 0 }"
+            >
                 {{ i.text }}
             </p>
             <div
-                class="line-horizontal-50 bg-2"
+                class="line-horizontal bg-second"
                 :class="{ 'opacity-0': i.num % 2 == 0 }"
             ></div>
-            <div class="br-50 bg-2 color-title square fs-title">
+            <div class="br-50 bg-second color-title square fs-title">
                 {{ i.num }}
             </div>
             <div
-                class="line-horizontal-50 bg-2"
+                class="line-horizontal bg-second"
                 :class="{ 'opacity-0': i.num % 2 != 0 }"
             ></div>
-            <p class="b-2 br-10 p-1" :class="{ 'opacity-0': i.num % 2 != 0 }">
+            <p
+                class="border-second br-10 p-1 text-center bg-white"
+                :class="{ 'opacity-0': i.num % 2 != 0 }"
+            >
                 {{ i.text }}
             </p>
-        </div>
-        <p class="b-2 p-1 br-10 text-center mt-50 bg-white">
+        </nav>
+        <h2 class="border-second p-1 br-10 text-center bg-white">
             Для удобства мы работаем двухнедельными отрезками -
             «Сессиями».Составляем дорожную карту сессий на весь проект, в каждой
             из которых указан достигаемый результат и стоимость. Таким образом
@@ -67,16 +74,77 @@ export default {
             Схема оплаты 50/50 по каждой сессии. Это означает, что на старте вы
             перечисляете 50% стоимости сессии, а по итогу выполнения сессии
             оплачиваете оставшуюся часть за выполненные услуги.
-        </p>
+        </h2>
+        <div class="line-vertical bg-second"></div>
     </main>
 </template>
 
 <style lang="scss" scoped>
-.line-decor {
-    position: absolute;
-    width: 3px;
-    height: 100%;
-    z-index: -1;
-    background: #d7c810;
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .line-vertical {
+        min-width: 3px;
+        min-height: 5rem;
+    }
+    .line-decor {
+        position: absolute;
+        width: 3px;
+        height: 100%;
+    }
+    h1 {
+        margin-bottom: 5rem;
+        z-index: 1;
+    }
+    nav {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .square {
+            min-width: 5rem;
+            min-height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .line-horizontal {
+            min-width: 5rem;
+            min-height: 3px;
+        }
+    }
+    h2 {
+        margin-top: 5rem;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 920px) {
+    main {
+        .line-vertical {
+            min-width: 3px;
+            min-height: 3rem;
+        }
+        h1 {
+            margin-bottom: 0px;
+        }
+        nav {
+            flex-direction: column;
+            p:first-child,
+            .line-horizontal {
+                display: none;
+            }
+            p:last-child {
+                opacity: 1;
+            }
+            .square {
+                margin: 3rem 0;
+            }
+        }
+        h2 {
+            margin-top: 3rem;
+        }
+    }
 }
 </style>
