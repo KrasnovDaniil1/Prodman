@@ -1,7 +1,6 @@
 <script>
 import About from "../components/About.vue";
 import Skills from "../components/Skills.vue";
-import Products from "../components/Products.vue";
 
 import Form from "../components/Form.vue";
 
@@ -10,7 +9,6 @@ export default {
         About,
         Skills,
         Form,
-        Products,
     },
     setup() {},
 };
@@ -20,8 +18,7 @@ export default {
     <section>
         <About />
         <Skills />
-        <Products />
-        <Form v-if="false" />
+        <Form />
     </section>
 </template>
 

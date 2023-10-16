@@ -36,6 +36,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
     .line-vertical {
         min-width: 3px;
         min-height: 5rem;

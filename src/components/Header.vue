@@ -4,7 +4,7 @@ export default {
     setup() {
         const url = [
             {
-                href: "",
+                href: "https://t.me/pavel_prodman",
                 icon: "fab fa-telegram ",
             },
             {
@@ -12,7 +12,7 @@ export default {
                 icon: "fab fa-whatsapp",
             },
             {
-                href: "",
+                href: "mailto:pavel_prodman@gmail.com",
                 icon: "fas fa-envelope ",
             },
         ];
@@ -26,7 +26,7 @@ export default {
 
 <template>
     <header>
-        <nav class="color-icon fs-icon p-1">
+        <nav class="color-icon fs-icon">
             <div>
                 <a
                     v-for="(item, index) in url"
@@ -45,26 +45,61 @@ export default {
                 ></a>
             </div>
         </nav>
-        <img class="menu" :src="menuImage" />
+        <p class="uppercase fs-title text-center color-icon">
+            Мы создаём инструменты бизнеса, которые гарантировано увеличат
+            важный для вашей компании показатель.
+        </p>
+        <div class="menu">
+            <img :src="menuImage" />
+        </div>
     </header>
 </template>
 <style lang="scss" scoped>
 header {
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     nav {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
     .menu {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100vh;
-        max-height: 100vh;
-        max-width: 100%;
+        position: relative;
+        width: auto;
+        height: 100%;
+        max-height: 100%;
+        aspect-ratio: 1/1;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+    p {
+        margin: 0 10%;
+    }
+}
+@media screen and (max-width:1024px) {
+    header {
+        height: 100%;
+        .menu {
+            width: 100%;
+            height: auto;
+        }
+        p {
+            margin: 0 1rem;
+        }
     }
 }
 </style>
