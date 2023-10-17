@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <footer class="p-1 fs-title color-title">
+    <footer class="p-1 fs-text color-title">
         <div class="left">
             <img :src="logo" />
             <p class="p-1">
@@ -20,7 +20,7 @@ export default {
                 <span>ОГРН: 1203900000017</span>
             </p>
         </div>
-        <div class="right fs-text text-center">
+        <div class="right text-center">
             <img :src="logo" />
             <p class="p-1">
                 <span>Сайт разработан:</span>
@@ -39,10 +39,12 @@ footer {
     position: relative;
     div {
         display: flex;
+        align-items: center;
         img {
             // width: 15%;
             // min-width: 100px;
-            max-width: 200px;
+            height: 100%;
+            max-width: 100px;
         }
         p {
             display: flex;
@@ -52,43 +54,27 @@ footer {
     }
     .right {
         img {
-            max-width: 75px;
+            max-width: 50px;
         }
     }
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 768px) {
     footer {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         div {
             img {
-                max-width: 150px;
-            }
-        }
-        .right {
-            width: 100%;
-            height: auto;
-            align-self: flex-start;
-            justify-content: end;
-            img {
-                max-width: 50px;
-            }
-        }
-    }
-}
-@media screen and (max-width: 420px) {
-    footer {
-        div {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            img {
-                max-width: 100px;
+                max-width: 75px;
             }
         }
         .right {
             flex-direction: row;
             justify-content: center;
+            img {
+                max-width: 50px;
+            }
         }
     }
 }

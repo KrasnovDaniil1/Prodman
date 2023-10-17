@@ -4,6 +4,7 @@ import Skills from "../components/Skills.vue";
 
 import Form from "../components/Form.js";
 import Team from "../components/Team.vue";
+import Technical from "../components/Technical.vue";
 
 export default {
     components: {
@@ -11,6 +12,7 @@ export default {
         Skills,
         Form,
         Team,
+        Technical,
     },
     setup() {},
 };
@@ -21,6 +23,7 @@ export default {
         <About />
         <Skills />
         <Team />
+        <Technical />
         <Form class="form p-1" />
     </section>
 </template>

@@ -14,11 +14,11 @@ html {
 }
 
 .fs-title {
-    font-size: 3rem;
+    font-size: 2.6rem;
     line-height: 1.3;
 }
 .fs-text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 1.1;
 }
 .fs-icon {
@@ -39,31 +39,29 @@ html {
 }
 
 .border-first {
-    // border: 3px solid #1fb0b2;
-
     border: 3px solid #26cb4d;
 }
 .border-second {
-    // border: 3px solid #d7c810;
     border: 3px solid #0b64fe;
 }
 .border-third {
     border: 3px solid #f87c4c;
 }
 .border-fourth {
-    border: 3px solid #c02a1b;
+    border: 3px solid #BB2649;
+}
+.border-fifth {
+    border: 3px solid #167c80;
 }
 
 .color-icon {
-    // color: #bb2649;
-    color: #c02a1b;
+    color: #BB2649;
 }
 .color-title {
     color: #fff;
 }
 .colot-text {
     color: #000;
-    // color: #0B64FE;
 }
 
 .bg-first {
@@ -79,7 +77,13 @@ html {
     background: #fff;
 }
 .bg-fourth {
-    background: #c02a1b;
+    background: #BB2649;
+}
+.bg-fifth {
+    background: #167c80;
+}
+.bg-white {
+    background: #fff;
 }
 
 .p-1 {

@@ -12,7 +12,7 @@ export default {
                 icon: "fab fa-whatsapp",
             },
             {
-                href: "mailto:pavel_prodman@gmail.com",
+                href: "mailto:prodman@prodman.pro",
                 icon: "fas fa-envelope ",
             },
         ];
@@ -26,7 +26,29 @@ export default {
 
 <template>
     <header>
-        <nav class="color-icon fs-icon">
+        <nav class="color-icon fs-icon" style="opacity: 0">
+            <div>
+                <a
+                    v-for="(item, index) in url"
+                    :href="item.href"
+                    target="_blank"
+                    :key="index"
+                    ><i class="anim-scale p-1" :class="item.icon"></i
+                ></a>
+            </div>
+            <div>
+                <a href="" target="_blank"
+                    ><i class="far fa-home anim-scale p-1"></i
+                ></a>
+                <a href="" target="_blank"
+                    ><i class="far fa-chevron-right anim-scale p-1"></i
+                ></a>
+            </div>
+        </nav>
+        <nav
+            class="color-icon fs-icon bg-white"
+            style="position: fixed; top: 0"
+        >
             <div>
                 <a
                     v-for="(item, index) in url"
@@ -61,6 +83,7 @@ header {
     flex-direction: column;
     align-items: center;
     nav {
+        z-index: 2;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -69,6 +92,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin: 0 3rem;
         }
     }
     .menu {
@@ -92,6 +116,11 @@ header {
 @media screen and (max-width: 1024px) {
     header {
         height: 100%;
+        nav {
+            div {
+                margin: 0 1rem;
+            }
+        }
         .menu {
             width: 100%;
             height: auto;

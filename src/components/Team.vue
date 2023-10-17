@@ -15,7 +15,6 @@ export default {
             Продман - это команда
         </h1>
         <div class="line-vertical bg-fourth"></div>
-
         <img class="border-fourth br-10" :src="TeamStructure" />
     </main>
 </template>
@@ -29,12 +28,26 @@ main {
         min-width: 3px;
         min-height: 5rem;
     }
+    img {
+        width: 75%;
+    }
 }
 @media screen and (max-width: 1024px) {
     main {
         .line-vertical {
             min-width: 3px;
             min-height: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        .line-vertical {
+            min-width: 3px;
+            min-height: 3rem;
+        }
+        img {
+            width: 100%;
         }
     }
 }

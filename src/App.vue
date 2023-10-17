@@ -42,7 +42,7 @@ export default {
     font-family: "Montserrat", sans-serif;
 }
 .main {
-    max-width: 1300px;
+    max-width: 1100px;
     padding: 0 1rem;
     margin: 0 auto;
 }
