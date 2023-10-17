@@ -19,15 +19,15 @@ export default {
             мы разбираемся с задачей, которую вам предстоит решить. Слышим вас и
             ваши потребности.
         </span>
-        <div class="line-vertical bg-first"></div>
-        <iframe
+        <!-- <div class="line-vertical bg-first"></div> -->
+        <!-- <iframe
             class="border-first br-10"
             src="https://www.youtube.com/embed/OCv7KfJat40"
             title="Элдос Алмазов - Я начал расти | Stand Up"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-        ></iframe>
+        ></iframe> -->
     </main>
 </template>
 
@@ -40,6 +40,14 @@ main {
     .line-vertical {
         min-width: 3px;
         min-height: 5rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    main {
+        .line-vertical {
+            min-width: 3px;
+            min-height: 3rem;
+        }
     }
 }
 </style>

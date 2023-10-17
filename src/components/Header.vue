@@ -46,8 +46,7 @@ export default {
             </div>
         </nav>
         <p class="uppercase fs-title text-center color-icon">
-            Мы создаём инструменты бизнеса, которые гарантировано увеличат
-            важный для вашей компании показатель.
+            Выполняем реинжиниринг процессов и их автоматизацию.
         </p>
         <div class="menu">
             <img :src="menuImage" />
@@ -90,7 +89,7 @@ header {
         margin: 0 10%;
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     header {
         height: 100%;
         .menu {

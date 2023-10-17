@@ -2,13 +2,15 @@
 import About from "../components/About.vue";
 import Skills from "../components/Skills.vue";
 
-import Form from "../components/Form.vue";
+import Form from "../components/Form.js";
+import Team from "../components/Team.vue";
 
 export default {
     components: {
         About,
         Skills,
         Form,
+        Team,
     },
     setup() {},
 };
@@ -18,8 +20,16 @@ export default {
     <section>
         <About />
         <Skills />
-        <Form />
+        <Team />
+        <Form class="form p-1" />
     </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+section {
+    .form {
+        display: flex;
+        justify-content: center;
+    }
+}
+</style>
