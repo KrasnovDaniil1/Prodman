@@ -10,10 +10,10 @@ export default {
 </script>
 
 <template>
-    <footer class="p-1 fs-text color-title">
+    <footer class="p-1 fs-footer color-title">
         <div class="left">
             <img :src="logo" />
-            <p class="p-1">
+            <p class="px-1">
                 <span> ООО «Продман»</span>
                 <span> ИНН: 3906387320</span>
                 <span>КПП: 390601001</span>
@@ -22,7 +22,7 @@ export default {
         </div>
         <div class="right text-center">
             <img :src="logo" />
-            <p class="p-1">
+            <p class="px-1">
                 <span>Сайт разработан:</span>
                 <span>студией Продман</span>
             </p>
@@ -36,44 +36,37 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    position: relative;
     div {
         display: flex;
         align-items: center;
+        font-size: 1.5rem;
         img {
-            // width: 15%;
-            // min-width: 100px;
-            height: 100%;
-            max-width: 100px;
+            max-width: 50px;
+            max-height: 100%;
         }
         p {
             display: flex;
             flex-direction: column;
-            justify-content: center;
         }
     }
     .right {
+        font-size: 1.2rem;
         img {
-            max-width: 50px;
+            max-width: 25px;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
     footer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         div {
             img {
-                max-width: 75px;
+                max-width: 30px;
             }
         }
         .right {
-            flex-direction: row;
-            justify-content: center;
             img {
-                max-width: 50px;
+                max-width: 20px;
             }
         }
     }
