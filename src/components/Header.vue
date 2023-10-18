@@ -1,5 +1,5 @@
 <script>
-import menuImage from "../assets/menu.png";
+import menuImage from "../assets/menu-min.png";
 export default {
     setup() {
         const url = [
