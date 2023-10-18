@@ -39,7 +39,7 @@ footer {
     div {
         display: flex;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
         img {
             max-width: 50px;
             max-height: 100%;
@@ -50,7 +50,6 @@ footer {
         }
     }
     .right {
-        font-size: 1.2rem;
         img {
             max-width: 25px;
         }
@@ -61,7 +60,7 @@ footer {
     footer {
         div {
             img {
-                max-width: 30px;
+                max-width: 35px;
             }
         }
         .right {
