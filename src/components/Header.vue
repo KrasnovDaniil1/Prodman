@@ -68,7 +68,7 @@ export default {
             </div>
         </nav>
         <p class="uppercase fs-title text-center color-icon">
-            Выполняем реинжиниринг процессов и их автоматизацию.
+            Выполняем реинжиниринг процессов и их автоматизацию
         </p>
         <div class="menu">
             <img :src="menuImage" />
