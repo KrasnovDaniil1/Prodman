@@ -67,11 +67,11 @@ export default {
                 ></a>
             </div>
         </nav>
-        <p class="uppercase fs-title text-center color-icon">
+        <h1 class="uppercase fs-title text-center color-icon">
             Выполняем реинжиниринг процессов и их автоматизацию
-        </p>
+        </h1>
         <div class="menu">
-            <img :src="menuImage" />
+            <img :src="menuImage" alt="продман" />
         </div>
     </header>
 </template>

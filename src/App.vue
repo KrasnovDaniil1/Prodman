@@ -2,11 +2,13 @@
 import { RouterView } from "vue-router";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
+import Cookie from "./components/Cookie.vue";
 
 export default {
     components: {
         Header,
         Footer,
+        Cookie,
     },
 };
 </script>
@@ -30,7 +32,7 @@ export default {
             <RouterView />
         </div>
         <Footer />
-        
+        <Cookie />
     </div>
 </template>
 
