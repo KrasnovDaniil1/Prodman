@@ -71,7 +71,7 @@ export default {
             Выполняем реинжиниринг процессов и их автоматизацию
         </h1>
         <div class="menu">
-            <img :src="menuImage" alt="продман" />
+            <img :src="menuImage" alt="" />
         </div>
     </header>
 </template>

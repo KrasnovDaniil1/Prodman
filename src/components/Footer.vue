@@ -12,7 +12,7 @@ export default {
 <template>
     <footer class="p-1 fs-footer color-title">
         <div class="left">
-            <img :src="logo" />
+            <img :src="logo" alt="продман" />
             <p class="px-1">
                 <span> ООО «Продман»</span>
                 <span> ИНН: 3906387320</span>
@@ -21,7 +21,7 @@ export default {
             </p>
         </div>
         <div class="right text-center">
-            <img :src="logo" />
+            <img :src="logo" alt="prodman" />
             <p class="px-1">
                 <span>Сайт разработан:</span>
                 <span>студией Продман</span>
