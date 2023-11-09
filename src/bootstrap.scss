@@ -49,14 +49,17 @@ html {
     border: 3px solid #f87c4c;
 }
 .border-fourth {
-    border: 3px solid #BB2649;
+    border: 3px solid #bb2649;
 }
 .border-fifth {
     border: 3px solid #167c80;
 }
+.border-sixth {
+    border: 3px solid #12162d;
+}
 
 .color-icon {
-    color: #BB2649;
+    color: #bb2649;
 }
 .color-title {
     color: #fff;
@@ -78,10 +81,13 @@ html {
     background: #fff;
 }
 .bg-fourth {
-    background: #BB2649;
+    background: #bb2649;
 }
 .bg-fifth {
     background: #167c80;
+}
+.bg-sixth {
+    background: #12162d;
 }
 .bg-white {
     background: #fff;
@@ -92,6 +98,9 @@ html {
 }
 .px-1 {
     padding: 0 1rem;
+}
+.py-1 {
+    padding: 1rem 0;
 }
 
 .anim-scale {
