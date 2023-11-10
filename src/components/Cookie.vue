@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 .cookie {
-    z-index: 999;
+    z-index: 999 !important;
     position: fixed;
     top: 100%;
     right: 0;
