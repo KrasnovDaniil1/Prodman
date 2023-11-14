@@ -28,17 +28,13 @@ export default {
 </script>
 
 <template>
-    <main class="cookie color-title p-1 br-10" v-if="cookieModal">
-        <span class="fs-text"
-            >Этот сайт использует cookie для хранения данных. Продолжая
-            использовать сайт, Вы даёте согласие на работу с этими
-            файлами.</span
-        >
-        <button
-            class="fs-title bg-white colot-text p-1 br-10"
-            @click="cookieAgree"
-        >
-            Принять и закрыть
+    <main class="cookie fs-text color-title p-1" v-if="!cookieModal">
+        <span>
+            Этот сайт использует cookie для хранения данных. Продолжая
+            использовать сайт, Вы даёте согласие на работу с этими файлами.
+        </span>
+        <button class="colot-text p-1 br-10" @click="cookieAgree">
+            Принять
         </button>
     </main>
 </template>
@@ -50,14 +46,18 @@ export default {
     top: 100%;
     right: 0;
     transform: translateY(-100%);
-    max-width: 500px;
+    // max-width: 500px;
+    width: 100%;
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     button {
         margin-top: 10px;
+        background: rgb(230, 230, 230);
     }
 }
+
 </style>
