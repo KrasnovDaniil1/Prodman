@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-    <main class="cookie fs-text color-title p-1" v-if="!cookieModal">
+    <main class="cookie fs-text color-title p-1" v-if="cookieModal">
         <span>
             Этот сайт использует cookie для хранения данных. Продолжая
             использовать сайт, Вы даёте согласие на работу с этими файлами.
